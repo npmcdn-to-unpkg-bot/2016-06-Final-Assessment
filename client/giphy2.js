@@ -4,7 +4,7 @@ $(function() {
   app = {
     init: function() {
         app.fetch();
-    // add listener to the save button
+    // add listener
     $('button').on('click', app.savegighy);    
     },
     fetch: function() {
@@ -54,20 +54,21 @@ $(function() {
     },
     clearGiphies: function() {
       $('#table_giphy').html('')
-    }
-    // savegighy: function(evt) {
-    //   var url = $(evt.currentTarget).attr('data_url');
-    //   console.log("In ssavegighy url: " + url);
-    //   $.ajax({
-    //     url: '/savegiphy',
-    //     data: {url: url},
-    //     type: 'GET',
-    //     success: function(res) {
-    //       console.log("In ssavegighy success callback");
-    //     },
-    //     error: function(err) {
-    //       console.error(err);
-    //     }
-    //   });
-    // }
+    },
+    savegighy: function(evt) {
+     var url = $(evt.currentTarget).attr('data_url');
+     console.log("In ssavegighy url: " + url);
+       $.ajax({
+         url: '/savegiphy',
+         data: {url: url},
+         type: 'GET',
+         success: function(res) {
+           console.log("In ssavegighy success callback");
+         },
+         error: function(err) {
+           console.error(err);
+         }
+       });
+   }
+  }  
 }());
