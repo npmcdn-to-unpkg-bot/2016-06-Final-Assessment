@@ -32,6 +32,7 @@ module.exports.getgiphy = function(req, res) {
 
 module.exports.savegiphy = function(req, res) {
   console.log("In savegiphy");
+  
   var DATA_FILE = './saved/data.json';
   fs.readFile(DATA_FILE, function(err, data) {
     console.log("In savegiphy readFile callback");
