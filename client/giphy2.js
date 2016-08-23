@@ -46,6 +46,7 @@ $(function() {
       // create the td for the save button. 
       var $td_save = $('<td></td>');
       var $save = $('<button data_url="' + imgSrc + ' "type="button">Save!</button>');
+      $save.on('click', app.savegighy);
       $td_save.html($save);
 
       // append them both to the tr
