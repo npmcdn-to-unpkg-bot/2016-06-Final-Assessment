@@ -1,0 +1,30 @@
+{
+  "name": "2016-06-final-assessment",
+  "version": "1.0.0",
+  "description": "Jill Shay 2016-06-final-assessment",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshay/2016-06-Final-Assessment.git"
+  },
+  "author": "Jill Shay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshay/2016-06-Final-Assessment/issues"
+  },
+  "homepage": "https://github.com/jshay/2016-06-Final-Assessment#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "mongoose": "^4.5.9",
+    "passport-github": "^1.1.0",
+    "path": "^0.12.7",
+    "request": "^2.74.0",
+    "unirest": "^0.5.1"
+  }
+}
